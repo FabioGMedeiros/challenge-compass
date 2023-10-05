@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter2:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter3:wght@400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+.central{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+}
+
+.menu {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #1E1F27;
+}
+
+.container {
+    width: 100%;
+    max-width: 1512px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    padding-left: 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    color: #1E1F27;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    margin-right: 20px;
+}
+
+.contact-info {
+    font-family: 'Inter', sans-serif;
+}
+
+.phone-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #1E1F27;
+}
+
+.central2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; 
+}
+
+.texto {
+    max-width: 584px;
+    margin: 0 auto; 
+    font-family: 'Inter', sans-serif;
+    text-align: left; 
+    padding: 100px;
+}
+
+.texto h1 {
+    color: #1E1F27;
+    font-family: "Poppins", sans-serif;
+    width: 584px;
+    font-size: 64px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.texto p {
+    color: #37383F;
+    font-family: "Inter", sans-serif;
+    width: 584px;
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.texto h2 {
+    font-family: "Poppins", sans-serif;
+    width: 584px;
+    height: 51px;
+    font-size: 32px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.donate-button {
+    margin-right: 30px;
+}
+
+.page1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 1200px;
+    margin-top: -290px;
+}
+
+.imagem-direita {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page1-image {
+    width: 584px; 
+    height: 616px; 
+    margin: 0 auto; 
+    display: block; 
+    padding: 0 28px; 
+}
+
+.page2 {
+    background-color: #1E1F27;
+    height: 100vh;
+}
+
