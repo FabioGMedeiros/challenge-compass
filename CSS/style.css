@@ -205,7 +205,7 @@ body {
     color: #FFFFFF;
 }
 
-.checkbox {
+.radio {
     display: none;
 }
 
@@ -232,16 +232,16 @@ body {
     background-repeat: no-repeat;
 }
 
-.checkbox:checked+.checkmark {
+.radio:checked+.checkmark {
     background-color: #ff69b4;
     border-color: #ff69b4;
 }
 
-.checkbox:checked+.checkmark::after {
+.radio:checked+.checkmark::after {
     display: block;
 }
 
-.checkbox:checked+.pay-button {
+.radio:checked+.pay-button {
     background-color: #3F96FC;
     color: #FFFFFF;
 }
@@ -414,43 +414,7 @@ body {
     color: #FFFFFF;
 }
 
-.checkbox1 {
-    display: none;
-}
-
-.checkmark1 {
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    border: 2px solid ;
-    background-color: #37383F;
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-}
-
-.checkmark1::after {
-    content: "";
-    position: absolute;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.checkbox1:checked+.checkmark1 {
-    background-color: #ff69b4;
-    border-color: #ff69b4;
-}
-
-.checkbox1:checked+.checkmark1::after {
-    display: block;
-}
-
-.checkbox1:checked+.agree-button {
+.radio:checked+.agree-button {
     background-color: #3F96FC;
     color: #FFFFFF;
 }

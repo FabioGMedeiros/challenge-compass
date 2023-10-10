@@ -375,7 +375,7 @@ body {
     color: #FFFFFF;
 }
 
-.checkbox {
+.radio {
     display: none;
 }
 
@@ -402,16 +402,16 @@ body {
     background-repeat: no-repeat;
 }
 
-.checkbox:checked+.checkmark {
+.radio:checked+.checkmark {
     background-color: #ff69b4;
     border-color: #ff69b4;
 }
 
-.checkbox:checked+.checkmark::after {
+.radio:checked+.checkmark::after {
     display: block;
 }
 
-.checkbox:checked+.pay-button {
+.radio:checked+.pay-button {
     background-color: #3F96FC;
     color: #FFFFFF;
 }
