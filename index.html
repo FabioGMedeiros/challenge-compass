@@ -27,6 +27,61 @@
                         </p>
                         <button class="Donate" type="button" onclick="Donate()"> <img src="imagens/white-heart.png"
                                 alt="white-heart">Donate</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <h1 class="modal-title">Choose your Donate</h1>
+                                <div class="modal-form">
+                                    <p class="email-subtitle"><span class="text-pink">EMAIL</span><span
+                                            class="text-blue">*</span></p>
+                                    <input type="email" id="emailInput" placeholder="youremail@here"
+                                        class="modal-input">
+                                    <p class="price-subtitle"><span class="text-pink">HOW MUCH CAN YOU HELP?</span><span
+                                            class="text-blue">*</span></p>
+                                    <input type="price" id="priceInput" placeholder="R$ 95,00" class="modal-input">
+                                    <p class="pay-method"><span class="text-pink">PAYMENT METHOD</span><span
+                                            class="text-blue">*</span></p>
+                                </div>
+                                <div class="modal-buttons">
+                                    <div class="pay-buttons">
+                                        <label class="pay-button">
+                                            <input type="checkbox" class="checkbox" name="paymentMethod" value="Pix">
+                                            Pix
+                                            <span class="checkmark">✓</span>
+                                        </label>
+                                        <label class="pay-button">
+                                            <input type="checkbox" class="checkbox" name="paymentMethod"
+                                                value="Credit Card">
+                                                Credit Card
+                                            <span class="checkmark">✓</span>
+                                        </label>
+                                        <label class="pay-button">
+                                            <input type="checkbox" class="checkbox" name="paymentMethod" value="PayPal">
+                                            PayPal
+                                            <span class="checkmark">✓</span>
+                                        </label>
+                                    </div>
+                                    <div class="final-buttons">
+                                        <button class="success-button1" type="button" onclick="Success()"> <img
+                                                src="imagens/white-heart.png" alt="white-heart">I wanna Help!</button>
+                                        <button class="cancel-button" type="button" onclick="Cancel()"> <img
+                                                src="imagens/Vector.png" alt="cancel-button">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            function Donate() {
+                                var modal = document.getElementById("myModal");
+                                modal.style.display = "block";
+                            }
+                            function Cancel() {
+                                var modal = document.getElementById("myModal");
+                                modal.style.display = "none";
+                            }
+                            function Success() {
+                                window.location.href = "success.html";
+                            }
+                        </script>
                     </nav>
                 </div>
             </div>
@@ -45,6 +100,60 @@
                             alt="white-heart">Donate</button>
                     <button class="Apply-to-adopt" type="button" onclick="Apply_to_Adopt()"> <img
                             src="imagens/dog-button.png" alt="dog-button">Apply to Adopt</button>
+                    <div id="myModal2" class="modal2">
+                        <div class="modal-content2">
+                            <h1 class="modal-title2">Apply to Adopt</h1>
+                            <div class="modal-form2">
+                                <a class="email-subtitle2"><span class="text-pink">EMAIL</span><span
+                                        class="text-blue">*</span></a>
+                                <input type="email" id="emailInput" placeholder="youremail@here" class="modal-input">
+                                <a class="full-name"><span class="text-pink">FULL NAME</span><span
+                                        class="text-blue">*</span></a>
+                                <input type="name" id="nameInput" placeholder="Your name" class="modal-input">
+                                <a class="birth-day"><span class="text-pink">DATE OF BIRTH</span><span
+                                        class="text-blue">*</span></a>
+                            </div>
+                            <div class="birth-box">
+                                <div class="box-birth">
+                                    <p class="day">Day<img src="imagens/expand_more.png" alt="expand"></p>
+                                </div>
+                                <div class="box-birth">
+                                    <p class="month">Month<img src="imagens/expand_more.png" alt="expand"></p>
+                                </div>
+                                <div class="box-birth">
+                                    <p class="year">Year<img src="imagens/expand_more.png" alt="expand"></p>
+                                </div>
+                            </div>
+                            <div class="modal-buttons2">
+                                <div class="agree-buttons">
+                                    <label class="agree-button">
+                                        <input type="checkbox" class="checkbox" name="Terms" value="Agree">
+                                        <span class="checkmark">✓</span>
+                                    </label>
+                                    <a>I agree with <span class="text-pink"> Privacy Policy </span>and <span class="text-pink">Terms of conditions</span></a>
+                                </div>
+                                <div class="final-buttons2">
+                                    <button class="success-button2" type="button" onclick="Success()"> <img
+                                            src="imagens/dog-buttonW.png" alt="dog-button">I wanna Help!</button>
+                                    <button class="cancel-button2" type="button" onclick="Cancel2()"> <img
+                                            src="imagens/Vector.png" alt="cancel-button">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function Apply_to_Adopt() {
+                            var modal = document.getElementById("myModal2");
+                            modal.style.display = "block";
+                        }
+                        function Cancel2() {
+                            var modal = document.getElementById("myModal2");
+                            modal.style.display = "none";
+                        }
+                        function Success() {
+                            window.location.href = "success.html";
+                        }
+                    </script>
                 </div>
             </div>
             <div class="imagem-direita">
@@ -89,7 +198,7 @@
             <div class="indicators-container" id="indicators"></div>
         </section>
     </div>
-    
+
     <div class="central4">
         <section class="page3">
             <div class="texto3">
@@ -188,11 +297,12 @@
                         <h2>Adopt or Foster</h2>
                         <p>Provide a forever or temporary home to a homeless animal.</p>
                         <div class="buttonsP5">
-                            <button class="View-Adoptables" type="button" onclick="View_Adoptables()">View Adoptables</button>
+                            <button class="View-Adoptables" type="button" onclick="View_Adoptables()">View
+                                Adoptables</button>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="box-1">
                     <div class="box-content-1">
                         <h2>Volunteer</h2>
@@ -202,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="box-1">
                     <div class="box-content-1">
                         <h2>Donate Monthly</h2>
@@ -212,7 +322,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="box-1">
                     <div class="box-content-1">
                         <h2>Start a Fundraiser</h2>
