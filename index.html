@@ -51,7 +51,7 @@
                                         <label class="pay-button">
                                             <input type="checkbox" class="checkbox" name="paymentMethod"
                                                 value="Credit Card">
-                                                Credit Card
+                                            Credit Card
                                             <span class="checkmark">✓</span>
                                         </label>
                                         <label class="pay-button">
@@ -130,7 +130,8 @@
                                         <input type="checkbox" class="checkbox" name="Terms" value="Agree">
                                         <span class="checkmark">✓</span>
                                     </label>
-                                    <a>I agree with <span class="text-pink"> Privacy Policy </span>and <span class="text-pink">Terms of conditions</span></a>
+                                    <a>I agree with <span class="text-pink"> Privacy Policy </span>and <span
+                                            class="text-pink">Terms of conditions</span></a>
                                 </div>
                                 <div class="final-buttons2">
                                     <button class="success-button2" type="button" onclick="Success()"> <img
@@ -151,7 +152,7 @@
                             modal.style.display = "none";
                         }
                         function Success() {
-                            window.location.href = "success.html";
+                            window.location.href = "adopt.html";
                         }
                     </script>
                 </div>
@@ -299,6 +300,11 @@
                         <div class="buttonsP5">
                             <button class="View-Adoptables" type="button" onclick="View_Adoptables()">View
                                 Adoptables</button>
+                            <script>
+                                function View_Adoptables() {
+                                    window.location.href = "adoptables.html";
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>
@@ -344,7 +350,12 @@
                 </h1>
                 <h2 class="sub-title2">Browse our adorable adoptables</h2>
                 <div class="buttons2">
-                    <button class="View-Adopt" type="button" onclick="Donate()">View Adoptables</button>
+                    <button class="View-Adopt" type="button" onclick="View_Adoptables()">View Adoptables</button>
+                    <script>
+                        function View_Adoptables() {
+                            window.location.href = "adoptables.html";
+                        }
+                    </script>
                     <button class="Apply-to-adopt3" type="button" onclick="Apply_to_Adopt()">Apply to Adopt</button>
                 </div>
             </div>
@@ -362,6 +373,11 @@
             <div class="newsletter-form">
                 <input type="email" id="emailInput" placeholder="Enter your email">
                 <button class="Subscribe" type="button" onclick="Subscribe()">Subscribe</button>
+                <script>
+                    function Subscribe() {
+                            window.location.href = "subscribe.html";
+                        }
+                </script>
             </div>
         </section>
     </div>
