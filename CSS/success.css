@@ -136,6 +136,13 @@ body {
     color: #F8DB46;
 }
 
+.color3 {
+    color: #FFFFFF;
+}
+
+.colorx {
+    font-family: "Poppins", sans-serif;
+}
 
 .buttons {
     display: flex;
