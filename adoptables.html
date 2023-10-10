@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/adoptables.css">
+    <title>View Adoptables!</title>
+</head>
+
+<body>
+
+    <div class="central">
+        <header class="menu">
+            <div class="menu border-bottom">
+                <div class="container">
+                    <div class="logo">
+                        <img src="imagens/logo.png" alt="Logo">
+                    </div>
+                    <nav class="texto">
+                        <p>Rescue center</p>
+                        <p>Apply to adopt</p>
+                        <p>Volunteer</p>
+                        <p>Ways to give</p>
+                        <p>Events</p>
+                        <p class="contato">
+                            <img src="imagens/Shape.png" alt="Telefone">631-249-7325
+                        </p>
+                        <button class="Donate" type="button" onclick="Donate()"> <img src="imagens/white-heart.png"
+                                alt="white-heart">Donate</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <h1 class="modal-title">Choose your<br />Donate</h1>
+                                <div class="modal-form">
+                                    <p class="email-subtitle"><span class="text-pink">EMAIL</span><span
+                                            class="text-blue">*</span></p>
+                                    <input type="email" id="emailInput" placeholder="youremail@here"
+                                        class="modal-input">
+                                    <p class="price-subtitle"><span class="text-pink">HOW MUCH CAN YOU HELP?</span><span
+                                            class="text-blue">*</span></p>
+                                    <input type="price" id="priceInput" placeholder="R$ 95,00" class="modal-input">
+                                    <p class="pay-method"><span class="text-pink">PAYMENT METHOD</span><span
+                                            class="text-blue">*</span></p>
+                                </div>
+                                <div class="modal-buttons">
+                                    <div class="pay-buttons">
+                                        <label class="pay-button">
+                                            <input type="checkbox" class="checkbox" name="paymentMethod" value="Pix">
+                                            <span class="checkmark">✓</span>
+                                            Pix
+                                        </label>
+                                        <label class="pay-button">
+                                            <input type="checkbox" class="checkbox" name="paymentMethod"
+                                                value="Credit Card">
+                                            <span class="checkmark">✓</span>
+                                            Credit Card
+                                        </label>
+                                        <label class="pay-button">
+                                            <input type="checkbox" class="checkbox" name="paymentMethod" value="PayPal">
+                                            <span class="checkmark">✓</span>
+                                            PayPal
+                                        </label>
+                                    </div>
+                                    <div class="final-buttons">
+                                        <button class="success-button1" type="button" onclick="Success()"> <img
+                                                src="imagens/white-heart.png" alt="white-heart">I wanna Help!</button>
+                                        <button class="cancel-button" type="button" onclick="Cancel()"> <img
+                                                src="imagens/Vector.png" alt="cancel-button">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            function Donate() {
+                                var modal = document.getElementById("myModal");
+                                modal.style.display = "block";
+                            }
+                            function Cancel() {
+                                var modal = document.getElementById("myModal");
+                                modal.style.display = "none";
+                            }
+                            function Success() {
+                                window.location.href = "success.html";
+                            }
+                        </script>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="page1">
+        <div class="page-container">
+            <button class="Back" type="button" onclick="Back()"> <img src="imagens/Vector.png" alt="dog-button">Back
+            </button>
+            <script>
+                function Back() {
+                    window.location.href = "index.html";
+                }
+            </script>
+            <div class="texto1">
+                <h1 class="title">Our Adoptable Pets!</h1>
+            </div>
+            <div class="image-grid">
+                <div class="row">
+                    <div class="image1">
+                        <img src="imagens/img_1.png" alt="img_ 1">
+                        <p class="image-text">BOB</p>
+                        <button class="image-button"><img
+                            src="imagens/dog-buttonW.png" alt="dog-button">See more</button>
+                    </div>
+                    <div class="image2">
+                        <img src="imagens/img_2.png" alt="img_ 2">
+                        <p class="image-text">CLORINDE</p>
+                        <button class="image-button"><img
+                            src="imagens/dog-buttonW.png" alt="dog-button">See more</button>
+                    </div>
+                    <div class="image3">
+                        <img src="imagens/img_3.png" alt="img_ 3">
+                        <p class="image-text">RONEY</p>
+                        <button class="image-button"><img
+                            src="imagens/dog-buttonW.png" alt="dog-button">See more</button>
+                    </div>
+                    <div class="image4">
+                        <img src="imagens/img_4.png" alt="img_ 4">
+                        <p class="image-text">FLOCKS</p>
+                        <button class="image-button"><img
+                            src="imagens/dog-buttonW.png" alt="dog-button">See more</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="image6">
+                        <img src="imagens/img_6.png" alt="img_ 6">
+                        <p class="image-text">MARY</p>
+                        <button class="image-button"><img
+                            src="imagens/dog-buttonW.png" alt="dog-button">See more</button>
+                    </div>
+                    <div class="image7">
+                        <img src="imagens/img_7.png" alt="img_ 7">
+                        <p class="image-text">ROBS</p>
+                        <button class="image-button"><img
+                            src="imagens/dog-buttonW.png" alt="dog-button">See more</button>
+                    </div>
+                    <div class="image8">
+                        <img src="imagens/img_8.png" alt="img_ 8">
+                        <p class="image-text">MATT</p>
+                        <button class="image-button"><img
+                            src="imagens/dog-buttonW.png" alt="dog-button">See more</button>
+                    </div>
+                    <div class="image5">
+                        <img src="imagens/img_5.png" alt="img_ 5">
+                        <p class="image-text">ARISTOTLE</p>
+                        <button class="image-button"><img
+                            src="imagens/dog-buttonW.png" alt="dog-button">See more</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class="central9">
+        <footer class="rodape">
+            <div class="colunm colunm1">
+                <img src="imagens/icon-logo.png" alt="logo">
+                <h2>FOREVER<br /> HOMES <img src="imagens/icon-heart.png" alt="heart"></h2>
+                <p>Helps Save Lives</p>
+            </div>
+            <div class="colunm colunm2">
+                <p>Adopt a Pet</p>
+                <p>Adoptable Dogs</p>
+                <p>Adoptable Cats</p>
+                <p>Become a Foster</p>
+                <p>Rescue Center</p>
+                <p>Get Involved</p>
+            </div>
+            <div class="colunm colunm3">
+                <p>Ways to Donate</p>
+                <p>Upcoming Events</p>
+                <p>Outreach Programs</p>
+                <p>Who We Are</p>
+                <p>Contact Us</p>
+                <p>Shop With Purpose</p>
+            </div>
+            <div class="colunm colunm4">
+                <p class="location">
+                    <img src="imagens/icon-location.png" alt="location">PO BOX 83644<br /> Middleton, 2452 Wilson
+                </p>
+                <p class="contact">
+                    <img src="imagens/Shape.png" alt="contact">631-249-7325
+                </p>
+                <p class="contact">
+                    <img src="imagens/icon-mail.png" alt="contact">pet_home@gmail.com
+                </p>
+                <div class="social-media">
+                    <img src="imagens/icon-twitter.png" alt="twitter">
+                    <img src="imagens/icon-whatsapp.png" alt="whatsapp">
+                    <img src="imagens/icon-instagram.png" alt="instagram">
+                </div>
+            </div>
+        </footer>
+        <div class="footer-line"></div>
+        <div class="footer-text">
+            <span class="color3">We are not just a rescue, </span> <span class="color4">we are a refuge</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
