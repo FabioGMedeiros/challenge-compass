@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/success.css">
+    <title>Success!</title>
+</head>
+
+<body>
+
+    <div class="central">
+        <header class="menu">
+            <div class="menu border-bottom">
+                <div class="container">
+                    <div class="logo">
+                        <img src="imagens/logo.png" alt="Logo">
+                    </div>
+                    <nav class="texto">
+                        <p>Rescue center</p>
+                        <p>Apply to adopt</p>
+                        <p>Volunteer</p>
+                        <p>Ways to give</p>
+                        <p>Events</p>
+                        <p class="contato">
+                            <img src="imagens/Shape.png" alt="Telefone">631-249-7325
+                        </p>
+                        <button class="Donate" type="button" onclick="Donate()"> <img src="imagens/white-heart.png"
+                                alt="white-heart">Donate</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <h1 class="modal-title">Choose your<br />Donate</h1>
+                                <div class="modal-form">
+                                    <p class="email-subtitle"><span class="text-pink">EMAIL</span><span
+                                            class="text-blue">*</span></p>
+                                    <input type="email" id="emailInput" placeholder="youremail@here"
+                                        class="modal-input">
+                                    <p class="price-subtitle"><span class="text-pink">HOW MUCH CAN YOU HELP?</span><span
+                                            class="text-blue">*</span></p>
+                                    <input type="price" id="priceInput" placeholder="R$ 95,00" class="modal-input">
+                                    <p class="pay-method"><span class="text-pink">PAYMENT METHOD</span><span
+                                            class="text-blue">*</span></p>
+                                </div>
+                                <div class="modal-buttons">
+                                    <div class="pay-buttons">
+                                        <label class="pay-button">
+                                            <input type="checkbox" class="checkbox" name="paymentMethod" value="Pix">
+                                            <span class="checkmark">✓</span>
+                                            Pix
+                                        </label>
+                                        <label class="pay-button">
+                                            <input type="checkbox" class="checkbox" name="paymentMethod"
+                                                value="Credit Card">
+                                            <span class="checkmark">✓</span>
+                                            Credit Card
+                                        </label>
+                                        <label class="pay-button">
+                                            <input type="checkbox" class="checkbox" name="paymentMethod" value="PayPal">
+                                            <span class="checkmark">✓</span>
+                                            PayPal
+                                        </label>
+                                    </div>
+                                    <div class="final-buttons">
+                                        <button class="success-button1" type="button" onclick="Success()"> <img
+                                                src="imagens/white-heart.png" alt="white-heart">I wanna Help!</button>
+                                        <button class="cancel-button" type="button" onclick="Cancel()"> <img
+                                                src="imagens/Vector.png" alt="cancel-button">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            function Donate() {
+                                var modal = document.getElementById("myModal");
+                                modal.style.display = "block";
+                            }
+                            function Cancel() {
+                                var modal = document.getElementById("myModal");
+                                modal.style.display = "none";
+                            }
+                            function Success() {
+                                window.location.href = "success.html";
+                            }
+                        </script>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="page1">
+        <div class="buttons">
+            <button class="Back" type="button" onclick="Back()"> <img src="imagens/Vector.png" alt="dog-button">Back
+            </button>
+            <script>
+                function Back() {
+                    window.location.href = "index.html";
+                }
+            </script>
+        </div>
+        <div class="below-img">
+            <img id="photo" src="imagens/success-img.png" alt="success-img">
+            <div class="texto1">
+                <h1><i id="spaceText" class="title"></i>Congratulations!</h1>
+                <p class="texts">You made a <span class="color1"> difference </span> in a pet's life and are
+                    contributing to a noble cause.</p>
+                <p>Thank you for adopting a pet!!</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
